@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #085F63;
+}
+
+.container {
+    background-color: #fff;
+    width: 90vmin;
+    height: 70vh;
+    padding: 30px 30px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.container h1 {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+}
+
+.container h1 span {
+    color: #025464;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+button {
+    height: 28px;
+    width: 28px;
+    display: grid;
+    place-items: center;
+    border-radius: 3px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    color: #333;
+    cursor: pointer;
+}
+
+select {
+    padding: 7px;
+    border: 1px solid #333;
+    border-radius: 3px;
+}
+
+.options label,
+.options select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    background-color: transparent;
+    appearance: none;
+    width: 40px;
+    height: 28px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='color']::-webkit-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #333;
+}
+
+input[type='color']::-moz-color-swatch {
+    border-radius: 15px;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 3px #333;
+}
+
+#text-input {
+    padding: 20px;
+    margin-top: 10px;
+    border-top: 2px solid #025464;
+}
+
+.text-input:focus {
+    outline: none;
+    border-color: transparent;
+}
+
+.active {
+    background-color: #025464;
+    color: #fff;
+}
+
+.social {
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social h4 {
+    padding: 1rem;
+}
+
+.social h4 a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.social h4 a:hover {
+    color: #085F63;
+    padding: 0.8rem;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    border-radius: 10px;
+}
